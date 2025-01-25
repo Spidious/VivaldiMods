@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/LonMcGregor/VivaldiMods/issues"
   },
-  "homepage": "https://github.com/LonMcGregor/VivaldiMods#readme"
+  "homepage": "https://github.com/LonMcGregor/VivaldiMods#readme",
+  "dependencies": {
+    "vivaldimods": "file:"
+  }
 }

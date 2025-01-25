@@ -3,4 +3,3 @@ mod_config.json
 debug.log
 
 package-lock.json
-config.json
