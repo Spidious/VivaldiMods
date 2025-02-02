@@ -1,5 +1,5 @@
 {
-    "application_path": "C:\\Users\\luked\\AppData\\local\\Vivaldi\\Application",
+    "application_path": "/opt/vivaldi",
     "mods": [
         "floatingExpandableLeftTabbar.css",
         "always_small_tab_audio.css",
