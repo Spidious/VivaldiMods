@@ -39,11 +39,12 @@ def get_app_resource_dir():
         log.info('Using Vivaldi %s' % newest_vivaldi)
         return newest_vivaldi
 
+APPLICATION_PATH = CONFIG['application_path'] # Move mods folder out of where updates are placed
 RESOURCE_DIRECTORY = get_app_resource_dir()
 BROWSER_HTML = os.path.join(RESOURCE_DIRECTORY, 'main.html')
 BROWSER_HTML_BAK = os.path.join(RESOURCE_DIRECTORY, 'browser.html.bak') 
 PAGE_ACTION_DIR = os.path.join(RESOURCE_DIRECTORY, 'user_files')
-MODS_DIR = os.path.join(RESOURCE_DIRECTORY, 'mods')
+MODS_DIR = os.path.join(APPLICATION_PATH, 'mods') 
 SPLASH_SVG = os.path.join(RESOURCE_DIRECTORY, 'resources', 'welcomepage-vivaldi.svg') 
 PAGE_ACTION_INSTALL_LOG = os.path.join(RESOURCE_DIRECTORY, 'page_action_install.log')
 SOURCE_MODS_DIR = os.path.join(os.path.dirname(__file__), 'mods')
