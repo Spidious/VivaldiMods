@@ -1,3 +1,5 @@
+/* Collapse the left tabbar and expand on hover */
+
 /* Auto hide vertical tab bar (overlay mode, no covering when collapsed)*/
 div#browser:not(.fullscreen) .tabbar-wrapper #tabs-tabbar-container.left
 {
