@@ -1,7 +1,6 @@
 /* Auto hide vertical tab bar (overlay mode, no covering when collapsed)*/
-div#browser:not(.fullscreen) > #main > .inner > div:not(#webview-container):not(#panels-container),
-#tabs-tabbar-container.left,
-#tabs-tabbar-container.right {
+div#browser:not(.fullscreen) .tabbar-wrapper #tabs-tabbar-container.left
+{
   width: 35px !important;
   transition: width 0.25s .2s;
   position: absolute;
@@ -11,12 +10,10 @@ div#browser:not(.fullscreen) > #main > .inner > div:not(#webview-container):not(
 }
 
 /* Set hover transition for tab bar */
-div#browser:not(.fullscreen) > #main > .inner > div:not(#webview-container):not(#panels-container):hover,
-#tabs-tabbar-container.left:hover {
+div#browser:not(.fullscreen) .tabbar-wrapper #tabs-tabbar-container.left:hover {
   width: 220px !important;
   transition: width 0.25s .2s;
 }
-
 /* Adjust webpage content to account for the tabbar */
 div#browser:has(#tabs-tabbar-container.left) #webview-container {
   margin-left: 35px; /* Offset for collapsed state */
@@ -29,6 +26,7 @@ div#browser:has(#tabs-tabbar-container.left) #webview-container {
 }
 
 /* Add margin to the trash and cloud icons in the tabbar */
+div#browser:has(#tabs-tabbar-container.left),
 .toolbar-tabbar > .button-toolbar.toggle-trash,
 .toolbar-tabbar > .toolbar-group > .button-toolbar.toggle-trash,
 .toolbar-tabbar > .button-toolbar.synced-tabs-button,
