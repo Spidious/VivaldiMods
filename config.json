@@ -2,9 +2,7 @@
     "application_path": "C:\\Users\\luked\\AppData\\local\\Vivaldi\\Application",
     "mods": [
         "floatingExpandableLeftTabbar.css",
-        "always_small_tab_audio.css",
-        "autoSaveSessions.js",
-        "bluescreen.css"
+        "always_small_tab_audio.css"
     ],
     "mod_dependencies": [
     ],
